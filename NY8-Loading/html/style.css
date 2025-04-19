@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Contrôles musique */
+.music-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+#volume-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+#volume-slider {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Texte principal */
+.left-text, .right-staff {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.left-text {
+    left: 5%;
+    text-align: left;
+}
+
+.left-text h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.left-text h2 {
+    font-size: 2.5rem;
+    margin: 10px 0 0 0;
+}
+
+/* Texte staff */
+.right-staff {
+    right: 5%;
+    text-align: right;
+}
+
+.right-staff h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.right-staff ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-staff li {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/* Couleurs personnalisables */
+.text-primary { color: #ffffff; }
+.text-secondary { color: #00643c; }
+.text-accent { color: #00643c; }
+
+/* Barre de progression */
+.progress-bar-container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #00643c;
+    transition: width 0.3s ease;
+}
